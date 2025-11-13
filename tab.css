@@ -1,0 +1,392 @@
+a.tabfont {
+    display: inline-block;
+    color: black;
+    background: white;
+    border: 2px solid black;      /* manga outline */
+    text-align: center;
+    font-family: "MS Mincho", "Times New Roman", serif; /* Japanese manga font style */
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 3px;
+    font-weight: bold;
+    
+}
+
+a.tabfont:hover {
+    background: black; 
+    color: white; 
+    transform: scale(1.1);        /* pop effect */
+}
+
+/* table cells styled like manga frames */
+td.tabfont {
+    border: 2px solid black;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* selected tab (highlight like manga focus box) */
+td.tabselect {
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+/* the bar holding tabs */
+div.tab { 
+    background: white;
+    border-bottom: 3px solid black;
+    width: 100%;
+    height: auto;
+}
+
+/* background image */
+.background {
+  width: 100%;
+  height: 100vh;       /* full screen height */
+  background: url("manga3.jpg") no-repeat center center;
+  background-size: cover;   /* makes sure it fills the screen */
+  background-attachment: fixed; /* optional: keeps bg fixed */
+}
+
+/* speech bubble style */
+
+
+/* add speech bubble tail */
+.navbar::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;    /* distance from bubble */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;   /* triangle sides */
+    border-right: 20px solid transparent;
+    border-top: 20px solid black;          /* outer border triangle */
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;   /* crops nicely without white space */
+  border: 2px solid black;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;       /* body takes full viewport */
+}
+table {
+  width: auto;                /* only as wide as content */
+  background: transparent;    /* transparent background */
+  border-collapse: collapse;  /* cleaner borders */
+}
+
+td {
+  background: transparent;    /* remove solid bg */
+}
+.navbar {
+  display: inline-block;      /* shrink to fit content */
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.6); /* optional: faint white manga-style speech bubble */
+  border: 2px solid black;    /* keeps manga outline */
+  border-radius: 8px;
+}
+body {
+  background: url('manga3.jpg') no-repeat center center fixed;
+  background-size: cover;   /* makes background stretch */
+}
+.video {
+  position: absolute;
+  top: 300px;       /* adjust this value to move down */
+  left: 70px;      /* controls how far from the left */
+  width: 490x;
+  border: 3px solid black;
+  outline: 3px solid white;
+  box-shadow: 0 0 0 2px black;
+  background-color: white;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}	
+.video1 {
+  position: absolute;
+  top: 0px;       /* adjust this value to move down */
+  left: 800px;      /* controls how far from the left */
+  width: 490px;
+  border: 3px solid black;
+  outline: 3px solid white;
+  box-shadow: 0 0 0 2px black;
+  background-color: white;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.video1 video {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+.video2 {
+  position: absolute;
+  top: 370px;       /* adjust this value to move down */
+  left: -345px;      /* controls how far from the left */
+  width: 490px;
+  border: 3px solid black;
+  outline: 3px solid white;
+  box-shadow: 0 0 0 2px black;
+  background-color: white;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.video2 video {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+.contacts {
+	text-align:center;
+}
+
+.tabfont1 {
+  position: absolute;
+  top: 200px;       /* adjust this value to move down */
+  left: 540px;      /* controls how far from the left */
+  width: 490px;
+  border: 3px solid black;
+  outline: 3px solid white;
+  box-shadow: 0 0 0 2px black;
+  background-color: white;
+  padding: 0;
+  box-sizing: border-box;
+}
+.tabfont2 {	
+	
+  position: relative;
+  display: block;
+  margin: 40px auto 0 auto;
+  width: fit-content;
+  padding: 8px 25px;
+  border: 3px solid black;
+  outline: 3px solid white;
+  box-shadow: 0 0 0 2px black;
+  background-color: white;
+  text-align: center;
+}
+.tabfont3 {	
+	
+  position: absolute;
+  top: 0px;       /* adjust this value to move down */
+  left: 800px;      /* controls how far from the left */
+  width: 490px;
+  border: 3px solid black;
+  outline: 3px solid white;
+  box-shadow: 0 0 0 2px black;
+  background-color: white;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card {
+  position: relative;
+  width: 800px;                     /* adjust as needed */
+  margin: 40px auto;                /* centers it */
+  padding: 20px;
+  background: white;                /* so text is readable */
+  border: 3px solid black;          /* main black border */
+  outline: 3px solid white;         /* white outer outline */
+  box-shadow: 0 0 0 2px black;      /* manga-style triple border */
+  border-radius: 12px;              /* smooth corners */
+  font-family: "Times New Roman", serif;
+  text-align: center;
+}
+.pic {
+   display: block;
+  margin: 20px auto;           /* centers it */
+  width: 300px;                /* adjust size as needed */
+  height: 300px;               /* equal height = perfect circle */
+  border-radius: 50%;          /* makes the image circular */
+  border: 4px solid black;     /* black manga border */
+  outline: 4px solid white;    /* outer white outline for contrast */
+  box-shadow: 0 0 0 2px black; /* adds extra black outline */
+  object-fit: cover;    
+}
+.resume-container {
+  position: relative;                /* needed for bubble tail */
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border: 4px solid black;           /* main manga border */
+  outline: 4px solid white;          /* white outline */
+  box-shadow: 0 0 0 2px black;       /* outer manga stroke */
+  border-radius: 16px;               /* rounded bubble edges */
+  font-family: "MS Mincho", serif;
+  text-align: center;
+}
+
+/* Manga speech bubble tail */
+.resume-container::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;                     /* position below box */
+  left: 50%;                         /* center it */
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid black;      /* main triangle border */
+}
+
+/* Optional: inner white fill for triangle */
+.resume-container::before {
+  content: "";
+  position: absolute;
+  bottom: -21px;                     /* slightly above the black one */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+  border-top: 21px solid white;      /* inner white fill */
+}
+
+/* Optional: style for resume image */
+.resume-container img {
+  display: block;
+  margin: 20px auto;
+  width: 250px;
+  border-radius: 50%;
+  border: 3px solid black;
+  object-fit: cover;
+}
+html {
+  scroll-behavior: smooth; /* makes it scroll smoothly to top */
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ffffffcc; /* semi-transparent white */
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 10px 15px;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px black; /* manga bubble look */
+  
+  z-index: 1000;
+}
+
+.arrow-up:hover {
+  background-color: #ffb7c5;
+  
+}
+/* --- Clean, manga-style video gallery --- */
+.video-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;                /* allows wrapping on smaller screens */
+  gap: 30px;                      /* spacing between videos */
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.video-card {
+  position: relative;
+  width: 480px;
+  background: white;
+  border: 3px solid black;
+  outline: 3px solid white;
+  box-shadow: 0 0 0 2px black;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+.video-card:hover {
+ 
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- About Me speech bubble --- */
+.speech-bubble {
+  position: relative;
+  width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+  border: 3px solid black;
+  outline: 3px solid white;
+  box-shadow: 0 0 0 2px black;
+  border-radius: 16px;
+  text-align: center;
+  font-family: "MS Mincho", "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+/* Manga speech bubble tail pointing UP toward the image */
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  top: -25px; /* places the tail above the bubble */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid black;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+  border-bottom: 21px solid white;
+}
+
+/* Profile image styling (keep your existing .pic class) */
+.pic {
+  display: block;
+  margin: 20px auto; 
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid black;
+  outline: 4px solid white;
+  box-shadow: 0 0 0 2px black;
+  object-fit: cover;
+}
